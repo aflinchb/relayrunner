@@ -34,7 +34,7 @@ jobs:
       with:
         node-version: '14'
     - name: Install npm packages
-      run: npm install
+      run: npm install --prefix ./client
     - name: Run Linter on ./client 
       run: npm run lint --prefix ./client
 
